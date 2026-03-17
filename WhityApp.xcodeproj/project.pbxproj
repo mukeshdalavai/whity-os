@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		83C702902F66F02800104517 /* Whity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		838171BB2F69E56B000C3B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838171B92F69E56B000C3B18 /* Assets.xcassets */; };
+		838171BC2F69E56B000C3B18 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171AC2F69E56B000C3B18 /* PhotoManager.swift */; };
+		838171BD2F69E56B000C3B18 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171B32F69E56B000C3B18 /* OpenAIService.swift */; };
+		838171BE2F69E56B000C3B18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171B72F69E56B000C3B18 /* Constants.swift */; };
+		838171BF2F69E56B000C3B18 /* VisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171AE2F69E56B000C3B18 /* VisionManager.swift */; };
+		838171C02F69E56B000C3B18 /* VoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171B02F69E56B000C3B18 /* VoiceManager.swift */; };
+		838171C12F69E56B000C3B18 /* WhityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171AA2F69E56B000C3B18 /* WhityApp.swift */; };
+		838171C22F69E56B000C3B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838171B52F69E56B000C3B18 /* ContentView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		83C702922F66F02800104517 /* Whity */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Whity;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		838171AA2F69E56B000C3B18 /* WhityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhityApp.swift; sourceTree = "<group>"; };
+		838171AC2F69E56B000C3B18 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		838171AE2F69E56B000C3B18 /* VisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionManager.swift; sourceTree = "<group>"; };
+		838171B02F69E56B000C3B18 /* VoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
+		838171B32F69E56B000C3B18 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		838171B52F69E56B000C3B18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		838171B72F69E56B000C3B18 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		838171B92F69E56B000C3B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83C702902F66F02800104517 /* WhityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		83C7028D2F66F02800104517 /* Frameworks */ = {
@@ -29,10 +40,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		838171AB2F69E56B000C3B18 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				838171AA2F69E56B000C3B18 /* WhityApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		838171AD2F69E56B000C3B18 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				838171AC2F69E56B000C3B18 /* PhotoManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		838171AF2F69E56B000C3B18 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				838171AE2F69E56B000C3B18 /* VisionManager.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		838171B12F69E56B000C3B18 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				838171B02F69E56B000C3B18 /* VoiceManager.swift */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		838171B22F69E56B000C3B18 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				838171AF2F69E56B000C3B18 /* Vision */,
+				838171B12F69E56B000C3B18 /* Voice */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		838171B42F69E56B000C3B18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				838171B32F69E56B000C3B18 /* OpenAIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		838171B62F69E56B000C3B18 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				838171B52F69E56B000C3B18 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		838171B82F69E56B000C3B18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				838171B72F69E56B000C3B18 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		838171BA2F69E56B000C3B18 /* WhityApp */ = {
+			isa = PBXGroup;
+			children = (
+				838171AB2F69E56B000C3B18 /* App */,
+				838171AD2F69E56B000C3B18 /* Core */,
+				838171B22F69E56B000C3B18 /* Features */,
+				838171B42F69E56B000C3B18 /* Services */,
+				838171B62F69E56B000C3B18 /* UI */,
+				838171B82F69E56B000C3B18 /* Utilities */,
+				838171B92F69E56B000C3B18 /* Assets.xcassets */,
+			);
+			path = WhityApp;
+			sourceTree = "<group>";
+		};
 		83C702872F66F02800104517 = {
 			isa = PBXGroup;
 			children = (
-				83C702922F66F02800104517 /* Whity */,
+				838171BA2F69E56B000C3B18 /* WhityApp */,
 				83C702912F66F02800104517 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +130,7 @@
 		83C702912F66F02800104517 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83C702902F66F02800104517 /* Whity.app */,
+				83C702902F66F02800104517 /* WhityApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83C7028F2F66F02800104517 /* Whity */ = {
+		83C7028F2F66F02800104517 /* WhityApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83C7029B2F66F02A00104517 /* Build configuration list for PBXNativeTarget "Whity" */;
+			buildConfigurationList = 83C7029B2F66F02A00104517 /* Build configuration list for PBXNativeTarget "WhityApp" */;
 			buildPhases = (
 				83C7028C2F66F02800104517 /* Sources */,
 				83C7028D2F66F02800104517 /* Frameworks */,
@@ -60,14 +150,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				83C702922F66F02800104517 /* Whity */,
-			);
-			name = Whity;
+			name = WhityApp;
 			packageProductDependencies = (
 			);
 			productName = Whity;
-			productReference = 83C702902F66F02800104517 /* Whity.app */;
+			productReference = 83C702902F66F02800104517 /* WhityApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83C7028B2F66F02800104517 /* Build configuration list for PBXProject "Whity" */;
+			buildConfigurationList = 83C7028B2F66F02800104517 /* Build configuration list for PBXProject "WhityApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +186,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83C7028F2F66F02800104517 /* Whity */,
+				83C7028F2F66F02800104517 /* WhityApp */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838171BB2F69E56B000C3B18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838171BC2F69E56B000C3B18 /* PhotoManager.swift in Sources */,
+				838171BD2F69E56B000C3B18 /* OpenAIService.swift in Sources */,
+				838171BE2F69E56B000C3B18 /* Constants.swift in Sources */,
+				838171BF2F69E56B000C3B18 /* VisionManager.swift in Sources */,
+				838171C02F69E56B000C3B18 /* VoiceManager.swift in Sources */,
+				838171C12F69E56B000C3B18 /* WhityApp.swift in Sources */,
+				838171C22F69E56B000C3B18 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83C7028B2F66F02800104517 /* Build configuration list for PBXProject "Whity" */ = {
+		83C7028B2F66F02800104517 /* Build configuration list for PBXProject "WhityApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83C702992F66F02A00104517 /* Debug */,
@@ -326,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83C7029B2F66F02A00104517 /* Build configuration list for PBXNativeTarget "Whity" */ = {
+		83C7029B2F66F02A00104517 /* Build configuration list for PBXNativeTarget "WhityApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83C7029C2F66F02A00104517 /* Debug */,
