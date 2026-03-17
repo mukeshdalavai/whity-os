@@ -94,8 +94,7 @@ class VoiceManager: NSObject, ObservableObject {
     func sendToAI(text:String){
         self.transcript = ""
 
-        let apiKey = "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"
-
+        let apiKey = ProcessInfo.processInfo.environment["OPENAI_API_KEY"] ?? ""
         let url = URL(string:"https://api.openai.com/v1/chat/completions")!
 
         var request = URLRequest(url:url)
